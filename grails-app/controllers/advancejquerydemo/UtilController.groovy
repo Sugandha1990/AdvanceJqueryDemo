@@ -33,7 +33,7 @@ class UtilController {
         Boolean isAllowed = params.boolean('isAllowed')
         List<String> names = ['Rohan', 'Vivek','Rohit','Puneet','Roni','Jeevesh']
         String errorMessage
-//        throw new Exception("hahahaha")
+//        if(!isAllowed)throw new Exception("hahahaha")
         if(isAllowed){
             String name = names.get(new Random().nextInt(names.size()))
             render(template: 'name', model: [name:name])
@@ -45,5 +45,12 @@ class UtilController {
 
     def createUser(){
         render([status: true] as JSON)
+    }
+
+    def getJsonDemo(){
+    }
+
+    def renderJSON(){
+        render(["firstname":"Vivek","lastname":"Garg","age":25] as JSON)
     }
 }
