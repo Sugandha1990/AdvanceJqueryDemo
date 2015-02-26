@@ -4,6 +4,7 @@ import grails.converters.JSON
 
 class UtilController {
 
+    static defaultAction = "callBackDemo"
 
     def validationPluginDemo() {
 
@@ -52,5 +53,9 @@ class UtilController {
 
     def renderJSON(){
         render(["firstname":"Vivek","lastname":"Garg","age":25] as JSON)
+    }
+
+    def getScriptDemo(){
+
     }
 }
