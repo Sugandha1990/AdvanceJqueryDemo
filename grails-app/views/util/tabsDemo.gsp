@@ -4,7 +4,6 @@
     <title></title>
     <meta name="layout" content="main">
 
-    <g:render template="includes"/>
 </head>
 
 <body>
