@@ -8,7 +8,6 @@
     <script>
         $(document).ready(function(){
 
-
             // Below one showing async behavior
 
             $("#hideWithoutCallBAck").click(function(){
@@ -42,11 +41,11 @@
 </head>
 
 <body>
-<button id="hideWithoutCallBAck">Hide Blue Paragraph Without callback</button>
+<button id="hideWithoutCallBAck">Hide Paragraph Without callback</button>
 <br><br>
 <p>This is a paragraph with little content.</p>
 <br>
-<button id="hideWithCallBAck">Hide Blue Paragraph With callback</button>
+<button id="hideWithCallBAck">Hide  Paragraph With callback</button>
 <br><br>
 <hr>
 <br>

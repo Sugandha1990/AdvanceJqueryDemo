@@ -7,7 +7,7 @@
     <title>Get-Script-Demo</title>
    <script type="application/javascript">
     $(document).ready(function(){
-      $("button").click(function(){
+      $("#getScript").click(function(){
         $.getScript("${resource(dir: "js",file: "demo_ajax_script.js")}",function(data,textStatus,xhr){
 //            console.log(data);
 //            console.log(textStatus);
@@ -18,6 +18,7 @@
   </script>
 </head>
 <body>
-<button>Use Ajax to get and then run a JavaScript</button>
+<button id="getScript">Use Ajax to get and then run a JavaScript</button>
+<a id="scriptSource" href="${resource(dir: 'js',file: 'demo_ajax_script.js')}" style="display: none"></a>
 </body>
 </html>

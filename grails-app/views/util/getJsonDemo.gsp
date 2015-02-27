@@ -6,13 +6,14 @@
     <style>
         div{background-color: springgreen}
     </style>
+
 <script type="application/javascript">
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#getJson").click(function(){
         %{--$.getJSON("${resource(file: "demoGetJson.json")}", function(result){--}%
         $.getJSON("renderJSON", function(result){
             $.each(result, function(key, value){
-                $("#getJson").append(key+"="+ value + "<br>");
+                $("#getJsonResult").append(key+"="+ value + "<br>");
             });
         });
     });
@@ -21,8 +22,8 @@ $(document).ready(function(){
 </head>
 
 <body>
-<button>Get JSON data Using $.getJSON</button>
+<button id="getJson">Get JSON data Using $.getJSON</button>
 <br><br>
-<div id="getJson"></div>
+<div id="getJsonResult"></div>
 </body>
 </html>

@@ -7,7 +7,6 @@
 //
 //= require jquery
 //= require jquery.validate
-//= require_tree .
 //= require_self
 
 if (typeof jQuery !== 'undefined') {
