@@ -58,4 +58,13 @@ class UtilController {
     def getScriptDemo(){
 
     }
+
+    def tabsDemo(){
+
+    }
+
+    def datePicker(){
+
+    }
+
 }
