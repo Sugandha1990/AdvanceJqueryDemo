@@ -7,6 +7,7 @@
 //
 //= require jquery
 //= require jquery.validate
+//= require jqueryui/jquery-ui.js
 //= require_tree .
 //= require_self
 
