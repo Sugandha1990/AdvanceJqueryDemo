@@ -103,19 +103,25 @@
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1>Welcome to Advanced JQuery</h1>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				%{--<h2>Available Controllers:</h2>--}%
 				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
-				</ul>
+					%{--<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">--}%
+						%{--<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>--}%
+					%{--</g:each>--}%
+
+                <li class="controller"><g:link controller="util" action="callBackDemo">Callback</g:link></li>
+                <li class="controller"><g:link controller="util" action="JSONDemo">JSON</g:link></li>
+                <li class="controller"><g:link controller="util" action="ajaxDemo">Ajax</g:link></li>
+                <li class="controller"><g:link controller="util" action="getJsonDemo">getJSON </g:link></li>
+                <li class="controller"><g:link controller="util" action="getScriptDemo">getScript </g:link></li>
+                <li class="controller"><g:link controller="util" action="validationPluginDemo">JQuery Validate Plugin</g:link></li>
+                    <li class="controller"><g:link controller="util" action="datePicker">DatePicker</g:link></li>
+                    <li class="controller"><g:link controller="util" action="tabsDemo">Tabs</g:link></li>
+                    <li class="controller"><g:link controller="util" action="datePicker">Dialog</g:link></li>
+                </ul>
 			</div>
 		</div>
 	</body>
